@@ -1,7 +1,8 @@
 import './Button.css'
 import './Top.css'
 import React, { useState} from 'react'
-import {v4 as uuid} from 'uuid';
+import { v4 as uuid } from 'uuid';
+import {Button} from './Button'
 
 import { ListItem } from './ListItem';
 function Top() {
@@ -30,14 +31,6 @@ function Top() {
     }
 
 
-    const showitem = () => {
-            
-              finallist.map((item) => {
-                return <ListItem key={item.id} {...item} />;
-              });
-            
-}
-
     console.log(finallist);
     console.log(wishlist);
     return (
@@ -51,16 +44,15 @@ function Top() {
               placeholder="Add Items"
             />
           </div>
-          <div className="Btn">
-            <button onClick={handleFinalAdd}>add tofinal list</button>
-          </div>
-          <div className="Btn">
-            <button onClick={handleWishListAdd}>wishlist</button>
-          </div>
+          <Button title={"add tofinal list"} handleAdd={handleFinalAdd} />
+          <Button title={"wishlist"} handleAdd={handleWishListAdd} />
         </div>
-        <div className="Btn">
-          <button onClick={showitem}>showlist</button>
-        </div>
+        {wishlist.map((item) => {
+          return <ListItem key={item.id} {...item} />;
+        })}
+        {finallist.map((item) => {
+          return <ListItem key={item.id} {...item} />;
+        })}
       </>
     );
 }
