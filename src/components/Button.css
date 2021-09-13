@@ -1,0 +1,18 @@
+button{
+    background-color: #ff9900;
+    border: none;
+    color:white;
+    text-align: center;
+    font-size: 18px;
+    padding: 13px 25px;
+    text-decoration: none;
+    display: inline;
+    border-radius: 25px;
+}
+.Btn{
+    margin-right: 20px;
+}
+button:hover{
+    background-color: white;
+    color:orange;
+}

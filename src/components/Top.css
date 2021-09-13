@@ -1,0 +1,23 @@
+.Parent{
+    display: flex;
+    justify-content: space-between;
+    background-color: #444444;
+    margin: 0px 100px 25px 100px;
+    height: 100px;
+    align-items: center;
+    border-radius: 6px;
+}
+
+.Inp{
+    margin-left: 20px;
+}
+.Inp > input {
+    border: 1px solid #ff9900;
+    font-size: 15pt;
+    height: 35px;
+    width: 250px;
+    outline: none;
+    border-radius: 12px;
+    color: #444444;
+    padding-left: 1em;
+}

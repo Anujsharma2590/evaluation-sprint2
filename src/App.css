@@ -1,4 +1,8 @@
 .App {
   text-align: center;
+  background-color: #333333;
+  margin: 10px 200px 200px;
+  border-radius: 20px;
+  min-height: 90vh;
 }
 
